@@ -1,0 +1,56 @@
+body{
+ display: grid;
+ grid-template-areas: 
+ 'header header header' 
+ 'nav articles adds'
+ 'footer footer footer';
+ grid-template-rows: 60px 1fr 60px;
+ grid-template-columns: 20% 1fr 15%;
+ grid-gap: 10px;
+ height: 100vh;
+ margin: 0;
+
+}
+#mainHeader{
+    grid-area: header;
+    text-align: center;
+    color: bisque;
+    background-color: rgb(21, 58, 20);
+    font-size: 1.8rem;
+    
+    
+}
+
+#mainArticle{
+    grid-area: articles;
+    background-image: url(avto-transport-6812.jpeg);
+    width: 1100px;
+    height: 700px;
+}
+
+#mainNav{
+    grid-area: nav;
+    color: aquamarine;
+    font-size: 1.5rem;
+    background-image: url(dff94c45535420d09bd81faaecff63e6.jpeg);
+    width: 280px;
+    height: 700px;
+}
+
+#sideAdds{
+    grid-area: adds;
+    color: blue;
+    font-size: 1.5rem;
+    background-color: bisque;
+    text-align: center;
+    
+    
+}
+
+#pageFooter{
+    grid-area: footer;
+    background-color: aquamarine;
+}
+
+
+
